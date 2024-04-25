@@ -1,1 +1,1 @@
-export { env, watch, build, zip, ftp } from './gulp/index.js'
+export { env, watch, build, zip, ftp, deploy } from './gulp/index.js'

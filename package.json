@@ -11,6 +11,7 @@
     "env": "gulp env",
     "zip": "gulp zip",
     "ftp": "gulp ftp",
+    "deploy": "gulp deploy",
     "format": "prettier ./src --write",
     "lint": "eslint --ext .js --ignore-path .eslintignore --fix ./src"
   },
