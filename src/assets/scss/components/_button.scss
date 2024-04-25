@@ -1,0 +1,21 @@
+.button {
+  min-height: 40px;
+  padding: 8px 16px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: lighten(#ff9100, 10%);
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.button:active {
+  background-color: #ff9100;
+}
+
+.button--expanded {
+  width: 100%;
+}

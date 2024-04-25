@@ -1,0 +1,70 @@
+{% extends "../layouts/default.twig" %}
+
+{#
+	ogImage: '/pages/about/about.jpg',
+	ogImageWidth: 1280,
+	ogImageHeight: 720
+#}
+
+{% set meta = {
+	title: 'Strikt Html Starter TWIG',
+	description: 'Strikt Html Starter TWIG',
+	keywords: 'strikt, starter, twig',
+	ogTitle: 'Strikt Html Starter TWIG',
+	ogDescription: 'Strikt Html Starter TWIG',
+	ogImage: null,
+	ogImageWidth: null,
+	ogImageHeight: null
+}%}
+
+{% block styles %}
+	<link href="/assets/css/index.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	<div class="wrapper">
+		<h1 class="example-h1">Strikt Html Starter</h1>
+		<div class="example-block">
+			<div class="example-block__title">
+				Svg icons
+			</div>
+			<div class="example-block__row">
+				{% include '../components/icon/index.twig' with { id: 'anchor', class: 'svg' } %}
+				{% include '../components/icon/index.twig' with { id: 'compass', class: 'svg svg--blue' } %}
+				{% include '../components/icon/index.twig' with { id: 'fish', class: 'svg svg--green' } %}
+			</div>
+		</div>
+		<div class="example-block example-block--images">
+			<div class="example-block__title">
+				Minimized images and webp
+			</div>
+			<div class="example-block__row">
+				<img src="/assets/images/logo-first.png" alt="png">
+				<img src="/assets/images/webp/logo-second.webp" alt="webp">
+			</div>
+		</div>
+		<div class="example-block">
+			<div class="example-block__title">
+				Form validation
+			</div>
+			<form id="example-form" class="example-form">
+				<div class="caption">
+					This is a test form for validation check.<br>It will not send data anywhere.
+				</div>
+				<div class="form-group">
+					<input data-pristine-required type="text" name="username" placeholder="Username" class="input-text input-text--expanded"/>
+				</div>
+				<div class="form-group">
+					<input data-pristine-required type="password" name="password" placeholder="Password" class="input-text input-text--expanded"/>
+				</div>
+				<div class="form-field form-field--right">
+					<button type="submit" class="button">Login</button>
+				</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}
+
+{% block scripts %}
+	<script src="/assets/js/index.bundle.js"></script>
+{% endblock %}
