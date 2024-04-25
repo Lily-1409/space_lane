@@ -8,6 +8,11 @@
   padding: 146px 50px 50px;
   margin: 0 auto;
 
+  @media (max-width: 768px) {
+    padding: 25px 50px;
+    gap: 0;
+  }
+
   @media (max-width: 520px) {
     gap: 80px;
     padding: 25px 20px;
@@ -16,6 +21,11 @@
   @media (max-width: 360px) {
     gap: 50px;
     padding: 20px;
+  }
+
+  @media (min-width: 521px) and (max-height: 867px) {
+    padding-top: 50px;
+    gap: 50px;
   }
 }
 
@@ -30,6 +40,11 @@
 
   @media (max-width: 520px) {
     max-width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 521px) and (max-height: 867px) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -83,6 +98,11 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: 521px) and (max-height: 867px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contacts-list {
@@ -113,6 +133,11 @@
   position: relative;
 
   @media (max-width: 520px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 521px) and (max-height: 867px) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -160,6 +185,11 @@
   color: #3a423a;
 
   @media (max-width: 520px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 521px) and (max-height: 867px) {
     font-size: 20px;
     line-height: 30px;
   }
